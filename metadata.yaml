@@ -8,3 +8,6 @@ skills:
   - name: adaptive-dev-routing
     path: skills/adaptive-dev-routing
     status: experimental
+  - name: development-task-handoff
+    path: skills/development-task-handoff
+    status: experimental

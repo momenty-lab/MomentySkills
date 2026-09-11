@@ -8,7 +8,7 @@ Read and update [HANDOFF.md](HANDOFF.md) as the sole current continuation record
 
 - Keep every skill portable and understandable from this repository alone.
 - Write original content. Do not copy private workspace rules, private or proprietary application source, session exports, credentials, personal data, or third-party artwork into the repository. Original redistributable minimal reproductions are allowed when they are necessary.
-- Preserve experimental language unless current evidence justifies a narrower, reviewable claim. Do not present founder-reported usage as an audit, benchmark, or proof of effectiveness.
+- Describe the project and each skill through concrete, reviewable capabilities. Scope claims about quality, efficiency, cost, or runtime outcomes to the evidence that supports them. Treat personal usage reports as anecdotes, not audits, benchmarks, proof of effectiveness, or vendor endorsement.
 - Keep changes focused on the requested skill, shared packaging contract, or community documentation. Avoid unrelated governance, websites, dependency upgrades, and abstractions.
 
 Current interface scope: N/A. MomentySkills is a Markdown/Python Codex skill collection and has no user-facing runtime interface or declared iOS/Web target. If that changes, define and verify the new interface/platform scope before implementation.

@@ -4,7 +4,7 @@ MomentySkills is intended to be an original public collection. Contributors shou
 
 ## Initial repository
 
-The initial repository text and `adaptive-dev-routing` materials were written for MomentySkills. The project was motivated by the founder's personal report that official Codex surfaces displayed 20 billion tokens of use. That statement is attributed experience, not an independently audited measurement or a performance result.
+The collection's original instructions were written for MomentySkills; general development practices are restated in a focused, portable form.
 
 Public Codex skill discovery and installation behavior is documented by OpenAI in the [Codex skills documentation](https://developers.openai.com/codex/skills). Mention of Codex, OpenAI, model names, or GitHub identifies compatible tools and services; it does not imply affiliation or endorsement.
 
