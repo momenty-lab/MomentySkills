@@ -1,0 +1,10 @@
+schema_version: 1
+project:
+  name: MomentySkills
+  repository: https://github.com/momenty-lab/MomentySkills
+  status: experimental
+  license: MIT
+skills:
+  - name: adaptive-dev-routing
+    path: skills/adaptive-dev-routing
+    status: experimental

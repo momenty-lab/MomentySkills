@@ -1,0 +1,69 @@
+{
+  "schema_version": "1",
+  "profile_id": "founder-sol-ceiling",
+  "display_name": "Founder Sol-ceiling example",
+  "calibration_status": "illustrative",
+  "bindings": {
+    "main_chat": {
+      "selection": "user-specified-or-strongest-available"
+    },
+    "initial_execution": {
+      "low_risk": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "medium"
+      },
+      "routine": {
+        "model": "gpt-5.6-terra",
+        "reasoning_effort": "medium"
+      },
+      "complex": {
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    "spec_review": {
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high"
+    },
+    "quality_review": {
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high"
+    },
+    "repair": {
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high"
+    }
+  },
+  "ceilings": {
+    "initial_execution": {
+      "maximum_config": {
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "xhigh"
+      },
+      "allowed_configs": [
+        {
+          "model": "gpt-5.6-luna",
+          "reasoning_effort": "medium"
+        },
+        {
+          "model": "gpt-5.6-terra",
+          "reasoning_effort": "medium"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "reasoning_effort": "xhigh"
+        }
+      ]
+    }
+  },
+  "gates": {
+    "repair": {
+      "requires": "locatable-current-task-first-attempt-failure",
+      "excludes": [
+        "pre-existing-repository-defect",
+        "missing-or-unverified-environment"
+      ]
+    }
+  },
+  "availability_check": "required-before-dispatch"
+}

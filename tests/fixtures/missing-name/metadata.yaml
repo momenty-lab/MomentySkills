@@ -1,0 +1,10 @@
+schema_version: 1
+project:
+  name: Missing Name Fixture
+  repository: https://example.invalid/missing-name
+  status: experimental
+  license: MIT
+skills:
+  - name: example-skill
+    path: skills/example-skill
+    status: experimental

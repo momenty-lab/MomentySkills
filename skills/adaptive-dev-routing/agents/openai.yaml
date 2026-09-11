@@ -1,0 +1,6 @@
+interface:
+  display_name: "Adaptive Development Routing"
+  short_description: "Route development roles by risk and evidence"
+  default_prompt: "Use $adaptive-dev-routing to choose compliant roles for this concrete development task and preserve verifiable execution, review, and repair evidence."
+policy:
+  allow_implicit_invocation: true

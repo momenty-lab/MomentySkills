@@ -1,0 +1,93 @@
+name: Experience report
+description: Share a positive, neutral, mixed, or negative result with measurement provenance.
+title: "[Experience]: "
+labels:
+  - experience
+body:
+  - type: markdown
+    attributes:
+      value: All result directions are useful. Unknown measurements are allowed when you say why they are unknown.
+  - type: textarea
+    id: task
+    attributes:
+      label: Task and acceptance criteria
+      description: Describe the development task, starting revision, constraints, and what counted as an acceptable result.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Record date, Codex surface, available models if known, operating system, repository revision, and relevant tools.
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Baseline and candidate
+      description: Describe both setups and material differences. If no baseline was run, say so.
+      placeholder: |
+        Baseline: ...
+        Candidate: ...
+  - type: textarea
+    id: requested_configuration
+    attributes:
+      label: Requested configuration
+      description: List the requested model and reasoning effort for each applicable role, including initial execution, main chat, specification review, quality review, and repair.
+    validations:
+      required: true
+  - type: textarea
+    id: observed_configuration
+    attributes:
+      label: Observed configuration
+      description: Separately list what the runtime actually used. Enter unknown with a reason for any unobservable field.
+    validations:
+      required: true
+  - type: textarea
+    id: time_provenance
+    attributes:
+      label: Time measurement and provenance
+      description: Optional. Give actual measurements, definitions, timezone where relevant, source, and included stages. If not measured, use unknown; estimates are qualitative only.
+  - type: textarea
+    id: token_provenance
+    attributes:
+      label: Token measurement and provenance
+      description: Optional. Give actual values, included token categories and stages when known, and source such as official UI, API response, or tool log. If not measured, use unknown.
+  - type: textarea
+    id: review_repair_totals
+    attributes:
+      label: Review and repair totals
+      description: Optional. Account for main or coordination work, context handoff, initial execution, specification review, quality review, and repair. Use zero only if measured; otherwise enter unknown.
+  - type: dropdown
+    id: direction
+    attributes:
+      label: Result direction
+      options:
+        - Positive
+        - Neutral
+        - Mixed
+        - Negative
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result and evidence
+      description: State which acceptance criteria passed or failed, regressions, retries, manual interventions, and links to safe supporting evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations and exclusions
+      description: Include missing fields, excluded runs, environment differences, and anything that limits comparison.
+  - type: textarea
+    id: incentives
+    attributes:
+      label: Incentives or conflicts
+      description: Optional. Disclose any relationship, reward, or other interest that could affect how the result is interpreted.
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: Reporting integrity
+      options:
+        - label: I removed credentials, private prompts, proprietary code, personal data, and private paths.
+          required: true

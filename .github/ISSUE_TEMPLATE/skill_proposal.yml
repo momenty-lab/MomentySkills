@@ -1,0 +1,57 @@
+name: Skill proposal
+description: Propose an original skill for a repeatable development problem.
+title: "[Skill proposal]: "
+labels:
+  - skill-proposal
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Repeatable problem
+      description: What recurring problem should the skill help with, and who encounters it?
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Triggering requests
+      description: Give two or three realistic requests that should cause Codex to consider the skill.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Boundaries and non-goals
+      description: When should the skill stay out of the way, and what authority or side effects must it not assume?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed guidance and resources
+      description: Describe the non-obvious decisions the skill would teach and any script, reference, or example it truly needs.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Existing evidence and evaluation plan
+      description: Share observed failures or use cases, then explain how the skill's behavior could be evaluated without claiming a result in advance.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Provenance
+      description: Identify original work and any public sources that materially shaped the proposal.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Public contribution check
+      options:
+        - label: I can contribute the proposed material under the MIT License.
+          required: true
+        - label: The proposal contains no credentials, private rules, proprietary source, session data, personal data, or third-party artwork.
+          required: true

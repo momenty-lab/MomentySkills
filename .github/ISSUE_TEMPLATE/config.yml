@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Codex skills documentation
+    url: https://developers.openai.com/codex/skills
+    about: Check the public Codex skill format and discovery documentation.
